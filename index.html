@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body class="bg-[#fdfaf5] flex items-center justify-center min-h-screen">
+        <div class="w-[350px] bg-white p-4 rounded-2xl shadow-lg">
+            <h1 class="text-xl font-bold mb-3">To Do Lists</h1>
+            
+            <!-- Add Category Section -->
+            <div class="relative mb-4">
+                <input id="new-category" type="text" class="w-full p-2 bg-gray-100 rounded-lg" placeholder="New category">
+                <input type="file" id="category-img" class="mt-2 text-sm p-2 " accept="image/*">
+                <button onclick="addCategory()" class="mt-2 w-full bg-blue-500 text-white p-2 rounded-lg">+ Add Category</button>
+            </div>
+            
+            <div id="categories-container" class="space-y-3">
+                <!-- Categories will be added here dynamically -->
+            </div>
+        </div>
+    
+        <script src="./script.js"></script>
+    </body>
+    </html>
+    
