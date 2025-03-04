@@ -44,7 +44,7 @@ function addItem(button) {
                 <i class="fas fa-check-circle text-gray-400 cursor-pointer" onclick="toggleItem(this)"></i>
                 <span>${inputElement.value}</span>
             </div>
-            <i class="fas fa-trash text-red-500 cursor-pointer" onclick="removeItem(this)"></i>
+            <i class="fa-solid fa-circle-xmark text-red-500 cursor-pointer" onclick="removeItem(this)"></i>
         `;
         
         categoryList.appendChild(li);
